@@ -18,10 +18,17 @@
 </head>
 
 <body>
-
     <!-- Start your project here-->
+
+    <!-- loading screen -->
+    <div id="load-screen">
+        <div class = "loader">
+        </div>
+        <p class="grey-text">Loading please wait...</p>
+    </div>
+    <!-- loading screen ends -->
     <!--Main Navigation-->
-<header>
+    <header>
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar no-shadow">
@@ -53,21 +60,59 @@
 
     <!-- Intro Section -->
     <div class="view jarallax interior-intro " data-jarallax='{"speed": 0.2}' >
-        <!-- <div class="full-bg-img ">
+        <div class="full-bg-img ">
             <div class="container flex-center">
-                <div class="row pt-5 mt-3" style="width:100% !important">
-                    <div class="col-md-12">
-                        <div class="text-center parallax-heading">
-                            <h1 class="h1-reponsive white-text  mb-3 wow zoomIn" data-wow-delay="0.3s">
-                                <strong>Creative Interiors <br> Built With passion</strong></h1>
-                            <a class="btn btn-sm btn-outline-white wow fadeInDown" data-wow-delay="0.4s" data-toggle="modal" data-target="#modalContactForm">
-                               Contact Us
-                            </a>
+                <div class="row mt-0" style="width:100% !important">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6" style="padding-right:0px">
+                        <div class="text-right">
+                           
+<!-- Material form contact -->
+<form class="card custom-form">
+        <h4 class="text-center grey-text pt-3">Contact Us</h4>
+
+        <!-- Material input text -->
+        <div class="md-form form-sm">
+          <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="materialFormContactNameEx" class="form-control form-control-sm">
+            <label for="materialFormContactNameEx">Your name</label>
+        </div>
+    
+        <!-- Material input email -->
+        <div class="md-form form-sm">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="email" id="materialFormContactEmailEx" class="form-control form-control-sm">
+            <label for="materialFormContactEmailEx">Your email</label>
+        </div>
+        
+         <!-- Material input cntact -->
+         <div class="md-form form-sm">
+                <i class="fa fa-phone prefix grey-text"></i>
+                <!-- <textarea type="text" id="materialFormContactMessageEx" class="form-control form-control-sm " rows="3"></textarea> -->
+                <input type="tel" id="materialFormContact" class="form-control form-control-sm">
+                <label for="materialFormContact">Your contact</label>
+            </div>
+
+        <!-- Material input subject -->
+        <div class="md-form form-sm">
+            <i class="fa fa-tag prefix grey-text"></i>
+            <input type="text" id="materialFormContactSubjectEx" class="form-control form-control-sm">
+            <label for="materialFormContactSubjectEx">Subject</label>
+        </div>
+        
+       
+    
+        <div class="text-center pb-3">
+            <button class="btn btn-sm btn-outline-grey" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+        </div>
+    </form>
+    <!-- Material form contact -->
+                          
                         </div>
                     </div>
                 </div>
             </div>  
-        </div> -->
+        </div>
         <div class="header-content">
             <div class="container">
                 <div class="row" style="width:100% !important">
@@ -77,7 +122,7 @@
                                 <div class="custom-flex-contact">
                                         <!-- <a class="btn btn-sm btn-outline-white wow fadeInDown" data-wow-delay="0.4s" data-toggle="modal" data-target="#modalContactForm">
                                                 Contact Us -->
-                                              <a class="btn btn-outline-white btn-sm wow fadeInDown float-left " data-wow-delay="0.4s" data-toggle="modal" data-target="#modalContactForm">Contact us</a>
+                                              <a class="btn btn-outline-white btn-sm wow fadeInDown float-left phone-only" data-wow-delay="0.4s" data-toggle="modal" data-target="#modalContactForm">Contact us</a>
                                 </div> 
                             </div>
                                  
@@ -224,7 +269,7 @@
                 <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
               </svg>
               <div class="slide__text">
-                <h2 class="slide__text-heading">Ofice Design</h2>
+                <h2 class="slide__text-heading">Office Design</h2>
                 <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
                 <a class="slide__text-link">Project link</a>
               </div>
@@ -286,7 +331,7 @@
         <!--Grid column-->
         <div class="col-md-3 wow slideInUp">
                 <div class = 'animated-logo'>
-                        <img src = 'img/animat-pencil-color.gif' class="img-fluid">
+                        <img src = 'img/pencil-white.gif' class="img-fluid">
                     </div>
           <h5 class="font-weight-bold mt-3"><span>Understanding Requirement </span></h5>
             <p class="grey-text">First we start by defining the objectives, deliverables and resources as per your requirement. We make sure that we take your inputs and implement them with perfection.
@@ -297,7 +342,7 @@
         <!--Grid column-->
         <div class="col-md-3 wow slideInUp" data-wow-delay="0.2s">
                 <div class = 'animated-logo'>
-                        <img src = 'img/animat-linechart-color.gif' class="img-fluid">
+                        <img src = 'img/graph-white.gif' class="img-fluid">
                     </div>
           <h5 class="font-weight-bold mt-3"><span>Analysis & Conceptualization</span></h5>
             <p class="grey-text"> We analyse all the key elements of your place and take accurate measurements. After assessing your place and complete analysis, we start planning the concept and design options for you.
@@ -309,10 +354,10 @@
         <!--Grid column-->
         <div class="col-md-3 wow slideInUp" data-wow-delay="0.6s">
                 <div class = 'animated-logo'>
-                        <img src = 'img/animat-chop-wood-color.gif' class="img-fluid">
+                        <img src = 'img/wood-white.gif' class="img-fluid">
                     </div>
           <h5 class="font-weight-bold mt-3"><span>Execution</span></h5>
-            <p class="grey-text">After the approval of the concept and design, execution begins. It can include anything from painting to major renovations.
+            <p class="grey-text">After the approval of the concept and design, execution begins. It can include anything from painting to major renovations.  All the iterations and major changes will take place in this step.
 
             </p>
         </div>
@@ -323,7 +368,7 @@
                 <img src = 'img/animat-checkmark-color.gif' class="img-fluid">
             </div>
           <h5 class="font-weight-bold mt-3"><span>Completion </span></h5>
-            <p class="grey-text">The place is yours for you to cherish along with your family for many years to come. Start the celebrations!
+            <p class="grey-text">The place is yours for you to cherish along with your family for many years to come. Start the celebrations and fall in love with your home!
             </p>
         </div>
         <!--Grid column-->
