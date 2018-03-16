@@ -171,6 +171,12 @@ h5 {
     background: -ms-linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
 }
+
+@media (max-width:580px) {
+    .black-overlay {
+        height: 55vh;
+    }
+}
 .custom-form {
     width:250px; 
     float: right;
@@ -407,8 +413,16 @@ i {
 
   @media (max-width:580px) {
     .de_testi {
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
+    .de_testi blockquote {
+        background: white !important;
+    }
+    .de_testi blockquote p {
+        padding: 0px;
+        padding-left: 5px;
+    }
+
   }
   
   .de_testi blockquote, .de_testi blockquote p {
@@ -720,6 +734,7 @@ svg {
     left: 0;
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg'); */
     background-image: url(../img/office-slide.jpeg);
+    background-position: center;
   }
   .slide:nth-child(1) .slide__overlay-path {
     fill: #e99c7e;
@@ -736,6 +751,7 @@ svg {
     left: -50%;
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg'); */
     background-image: url(../img/residential-slide.jpeg);
+    background-position: center;
   }
   .slide:nth-child(2) .slide__overlay-path {
     fill: #e1ccae;
@@ -752,6 +768,7 @@ svg {
     left: -100%;
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg'); */
     background-image: url(../img/slide-office.jpeg);
+    background-position: center;
   }
   .slide:nth-child(3) .slide__overlay-path {
     fill: #adc5cd;
@@ -768,6 +785,7 @@ svg {
     left: -150%;
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg'); */
     background-image: url(../img/budget-slide.jpeg);
+    background-position: center;
   }
   .slide:nth-child(4) .slide__overlay-path {
     fill: #cbc6c3;
