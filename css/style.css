@@ -707,7 +707,8 @@ svg {
     transition: transform 0.5s;
     will-change: transform;
   }
-  .slide {
+
+  .sample-work .slide {
     position: absolute;
     top: 0;
     width: 100%;
@@ -899,3 +900,4 @@ svg {
   }
   
 /* parallax ends */
+
